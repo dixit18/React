@@ -3,7 +3,7 @@ import Modal from '../UI/Modal'
 import CartItem from './CartItem'
 import {useContext} from 'react'
 import CartContext from '../../store/cart-context'
-const Cart = props =>{
+const Cart = async (props) =>{
 
     const cartCtx = useContext(CartContext)
     const totalAmount = `₹${cartCtx.totalAmount.toFixed(2)}`
